@@ -1,0 +1,45 @@
+{
+  "name": "lean-reader",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Token-minimized URL-to-clean-text reader for LLMs, with a token-savings receipt. MCP server + library.",
+  "license": "MIT",
+  "bin": {
+    "lean-reader": "src/server.js"
+  },
+  "mcpName": "io.github.AIMento/lean-reader",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "src",
+    "lib"
+  ],
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "llm",
+    "tokens",
+    "scraper",
+    "readability",
+    "markdown"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "test:core": "node scripts/test-core.mjs",
+    "test:mcp": "node scripts/test-mcp.mjs",
+    "measure": "node measure.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "@mozilla/readability": "^0.6.0",
+    "defuddle": "^0.19.0",
+    "ipaddr.js": "^2.4.0",
+    "js-tiktoken": "^1.0.21",
+    "linkedom": "^0.18.12",
+    "turndown": "^7.2.4",
+    "undici": "^6.27.0",
+    "zod": "^4.4.3"
+  }
+}
