@@ -10,3 +10,7 @@ dist/
 # Internal launch/marketing strategy — never publish
 launch/
 LAUNCH-CHECKLIST.md
+
+# MCP Registry publisher CLI (local tool, not part of package)
+mcp-publisher.exe
+*.tar.gz
