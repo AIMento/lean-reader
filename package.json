@@ -1,7 +1,7 @@
 {
   "name": "lean-reader",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "description": "Token-minimized URL-to-clean-text reader for LLMs, with a token-savings receipt. MCP server + library.",
   "license": "MIT",
